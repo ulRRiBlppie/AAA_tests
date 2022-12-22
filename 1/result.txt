@@ -1,0 +1,39 @@
+Trying:
+    encode_test('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode_test('sos')
+Expecting:
+    Traceback (most recent call last):
+    KeyError: 's'
+ok
+Trying:
+    encode_test(1)
+Expecting:
+    Traceback (most recent call last):
+    TypeError: 'int' object is not iterable
+ok
+Trying:
+    encode_test('S O S') # doctest: +NORMALIZE_WHITESPACE
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode_test('SOOOOOOOOOOS') # doctest: +ELLIPSIS
+Expecting:
+    '... ... ...'
+ok
+Trying:
+    encode_test('S OOOOOOOO S') # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
+Expecting:
+    '... ... --- ... ...'
+ok
+1 items had no tests:
+    issue1
+1 items passed all tests:
+   6 tests in issue1.encode_test
+6 tests in 2 items.
+6 passed and 0 failed.
+Test passed.

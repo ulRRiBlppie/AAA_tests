@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.10.6, pytest-7.2.0, pluggy-1.0.0 -- /opt/homebrew/opt/python@3.10/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /Users/andreytarasov/Desktop/Python/tests/4
+collecting ... collected 4 items
+
+issue4.py::test_with_assertEqual_1 PASSED                                [ 25%]
+issue4.py::test_with_assertEqual_2 PASSED                                [ 50%]
+issue4.py::test_type_error_callable PASSED                               [ 75%]
+issue4.py::test_type_error_empty PASSED                                  [100%]
+
+============================== 4 passed in 0.00s ===============================

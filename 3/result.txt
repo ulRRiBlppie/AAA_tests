@@ -1,0 +1,11 @@
+test_exception (issue3.TestOneHotEncoder)
+Test not itarable object ... ok
+test_with_assertEqual_1 (issue3.TestOneHotEncoder) ... ok
+test_with_assertEqual_2 (issue3.TestOneHotEncoder) ... ok
+test_with_assertIn (issue3.TestOneHotEncoder)
+Test 3 with assertIn ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
