@@ -12,7 +12,7 @@ def encode_test(message):
     >>> encode_test(1)
     Traceback (most recent call last):
     TypeError: 'int' object is not iterable
-    
+
     >>> encode_test('S O S') # doctest: +NORMALIZE_WHITESPACE
     '... --- ...'
     >>> encode_test('SOOOOOOOOOOS') # doctest: +ELLIPSIS

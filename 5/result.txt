@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.10.6, pytest-7.2.0, pluggy-1.0.0 -- /opt/homebrew/opt/python@3.10/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /Users/andreytarasov/Desktop/Python/tests/5
+plugins: cov-4.0.0
+collecting ... collected 10 items
+
+issue5.py::test_date_format[16.05.2000-2000] PASSED                      [ 10%]
+issue5.py::test_date_format[01.01.0001-1] PASSED                         [ 20%]
+issue5.py::test_date_format[24.02.2022-2022] PASSED                      [ 30%]
+issue5.py::test_date_format[23.12.2022-2022] PASSED                      [ 40%]
+issue5.py::test_date_format[0988-06-01-988] PASSED                       [ 50%]
+issue5.py::test_date_format[1952-10-07-1952] PASSED                      [ 60%]
+issue5.py::test_date_format[6999-01-01-6999] PASSED                      [ 70%]
+issue5.py::test_incorrect_format PASSED                                  [ 80%]
+issue5.py::test_incorrect_empty PASSED                                   [ 90%]
+issue5.py::test_not_date PASSED                                          [100%]
+
+============================== 10 passed in 0.02s ==============================

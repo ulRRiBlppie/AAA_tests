@@ -4,7 +4,7 @@ import unittest
 
 class TestOneHotEncoder(unittest.TestCase):
 
-    def test_with_assertEqual_1(self):
+    def test_with_assertEqual_levels(self):
         levels = ['Junior', 'Junior', 'Middle',  'Middle', 'Senior']
         exp_transformed_levels = [
             ('Junior',   [0, 0, 1]),
@@ -16,7 +16,7 @@ class TestOneHotEncoder(unittest.TestCase):
         transformed_levels = fit_transform(levels)
         self.assertEqual(transformed_levels, exp_transformed_levels)
 
-    def test_with_assertEqual_2(self):
+    def test_with_assertEqual_cities(self):
         cities = ['Moscow', 'New York', 'Moscow', 'London']
         exp_transformed_cities = [
             ('Moscow', [0, 0, 1]),
@@ -28,7 +28,6 @@ class TestOneHotEncoder(unittest.TestCase):
         self.assertEqual(transformed_cities, exp_transformed_cities)
 
     def test_with_assertIn(self):
-        """Test 3 with assertIn"""
         elements = ['fire', 'quit']
         exp_transformed_elements = [
             ('fire', [0, 1]),
@@ -38,8 +37,7 @@ class TestOneHotEncoder(unittest.TestCase):
         self.assertIn(exp_transformed_elements[0], (transformed_elements[0], ))
         self.assertIn(exp_transformed_elements[1], (transformed_elements[1], ))
 
-    def test_exception(self):
-        """ Test not itarable object """
+    def test_exception_callable(self):
         with self.assertRaises(TypeError):
             fit_transform(123)
 
